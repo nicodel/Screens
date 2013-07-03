@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Get my screen size</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="">
+    <style>
+      h1 {
+      font-size:1.4rem;
+      }
+      p {font-size:1.2rem;}
+    </style>
+  </head>
+  
+  <body>
+    <h1>WINDOWS</h1>
+    <p id="WW">Width:</p>
+    <p id="WH">Height:</p>
+    <h1>WINDOWS.SCREEN</h1>
+    <p id="SavailableW">availableW:</p>
+    <p id="SavailableH">availableH:</p>
+    <p id="SW">Width:</p>
+    <p id="SH">Height:</p>
+  </body>
+  <script>
+    document.getElementById("SavailableH").innerHTML = "availableH: " + window.screen.availHeight;
+    document.getElementById("SavailableW").innerHTML = "availableW: " + window.screen.availWidth;
+    document.getElementById("SH").innerHTML = "Height: " + window.screen.height;
+    document.getElementById("SW").innerHTML = "Width: " + window.screen.width;
+    
+    document.getElementById("WH").innerHTML = "Height: " + window.innerHeight;
+    document.getElementById("WW").innerHTML = "Width: " + window.innerWidth;
+  </script>
+
+</html>

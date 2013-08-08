@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  
+
   <head>
     <title>Get my screen size</title>
     <meta charset="utf-8" />
@@ -12,14 +12,15 @@
       p {font-size:1.2rem;}
     </style>
   </head>
-  
+
   <body>
-    <h1>WINDOWS</h1>
+    <h1>window.innerHeight/innerWidth</h1>
     <p id="WW">Width:</p>
     <p id="WH">Height:</p>
-    <h1>WINDOWS.SCREEN</h1>
+    <h1>window.screen.availHeight/availWidth</h1>
     <p id="SavailableW">availableW:</p>
     <p id="SavailableH">availableH:</p>
+    <h1>window.screen.height/width</h1>
     <p id="SW">Width:</p>
     <p id="SH">Height:</p>
   </body>
@@ -28,7 +29,7 @@
     document.getElementById("SavailableW").innerHTML = "availableW: " + window.screen.availWidth;
     document.getElementById("SH").innerHTML = "Height: " + window.screen.height;
     document.getElementById("SW").innerHTML = "Width: " + window.screen.width;
-    
+
     document.getElementById("WH").innerHTML = "Height: " + window.innerHeight;
     document.getElementById("WW").innerHTML = "Width: " + window.innerWidth;
   </script>
